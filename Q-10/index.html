@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-10</title>
+</head>
+<style>
+    .register-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .space{
+        margin-bottom: 10px;
+    }
+
+    .star{
+        color: red;
+    }
+</style>
+
+<body>
+    <h2>Registration Form </h2>
+
+    <form action="" class="register-form" id="register">
+        <label for="" >FirstName <span class="star">*</span> <input type="text" class="space" required></label>
+        <label for="">LastName<span class="star">*</span>  <input type="text" class="space" required></label>
+
+        <label for="">Email<span class="star">*</span>  <input type="text" class="space" required></label>
+
+        <label for="">Phone<span class="star">*</span>  <input type="text" class="space" required></label>
+
+        <label for="">Zipcode<span class="star">*</span>  <input type="text" class="space" required></label>
+        <label for="">Address<span class="star">*</span>  <textarea name="" id="" required></textarea></label>
+        <div id="error"></div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
