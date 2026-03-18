@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-31</title>
+    <style>
+        .style{
+            display: flex;
+            gap: 50px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: wheat;
+        }
+
+        .box2 {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Basic Drag & Drop Between Two Boxes </h2>
+    <div class="style">
+        <div id="leftbox" class="box">
+            <div class="items" draggable="true">Item 1</div>
+            <div class="items" draggable="true">Item 2</div>
+            <div class="items" draggable="true">Item 3</div>
+        </div>
+        <div id="rightbox" class="box2 box" ondragover="allowdrag(event)" ondrop="drop(event)">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
