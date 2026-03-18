@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-28</title>
     <style>
-        body{
+        body {
             background-color: white;
             color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
         }
-        .dark{
+
+        .dark {
             background-color: black;
             color: white;
         }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .touch{
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
+
     <h2>Toggle Dark Mode </h2>
     <p>Click the button to toggle between dark and light mode for this page</p>
-    <button onclick="switchTheme()">Toggle Dark Mode</button>
+    <button onclick="switchTheme()" class="inputdesign touch">Toggle Dark Mode</button>
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-11</title>
+    <title>Q-38</title>
     <style>
         body {
             display: flex;
@@ -17,9 +17,8 @@
 
         .design {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background: #b7b6d1;
-            background: linear-gradient(90deg, rgba(183, 182, 209, 1) 0%, rgba(132, 132, 209, 1) 35%, rgba(147, 222, 237, 1) 100%);
-            min-width: 400px;
+            background-image: linear-gradient(to left, #7d9f7a, #8db797, #9ecfb5, #b2e7d4, #c8fff3);
+            min-width: 450px;
             min-height: 400px;
             display: flex;
             flex-direction: column;
@@ -34,20 +33,14 @@
             border-radius: 10px;
             margin-bottom: 10px;
         }
-
-        .touch {
-            cursor: pointer;
-
-        }
     </style>
 </head>
 
 <body>
     <div class="design">
-        <h2>Get Full URL</h2>
-
-        <button onclick="getURL()" class="inputdesign touch">Get URL</button>
-        <div id="result" style="padding: 20px;"></div>
+        <h2>Debounce Search Input</h2>
+        <input type="search" placeholder="Search Products " id="search" class="inputdesign">
+        <div id="result"></div>
     </div>
     <script src="script.js"></script>
 </body>

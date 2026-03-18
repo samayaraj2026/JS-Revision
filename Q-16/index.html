@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-16</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to right top, #a9eee2, #6ee6fc, #5bd6ff, #9fbaff, #f090ff);
+            min-width: 400px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .touch {
+            cursor: pointer;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Count Vowels and Consonants</h2>
-    <input type="text" placeholder="enter text" id="input">
-    <div id="error" style="color: red;"></div>
-    <button id="click-btn">Click</button>
-    <div id="result"></div>
+    <div class="design">
+        <h2>Count Vowels and Consonants</h2>
+        <input type="text" placeholder="enter text" id="input" class="inputdesign">
+        <div id="error" style="color: red;"></div>
+        <button id="click-btn" class="inputdesign touch">Click</button>
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

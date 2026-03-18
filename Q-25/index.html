@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Q-25</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to left, #7d9f7a, #8db797, #9ecfb5, #b2e7d4, #c8fff3);
+            min-width: 450px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type='checkbox'] {
+            transform: scale(1.5);
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Show / Hide Password</h2>
-    <input type="password" placeholder="Enter Password" id="input">
-    <input type="checkbox" onclick="view()">Show Password
+    <div class="design">
+        <h2>Show / Hide Password</h2>
+        <input type="password" placeholder="Enter Password" id="input" class="inputdesign">
+        <input type="checkbox" onclick="view()" class="inputdesign">Show Password
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

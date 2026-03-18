@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-19</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to right top, #9f7a99, #b692b0, #ceabc7, #e6c4df, #ffdef8);
+            min-width: 450px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .touch {
+            cursor: pointer;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Remove Duplicate Elements from Array</h2>
-    <input type="text" placeholder="Input Array" id="input">
-    <div id="error" style="color: red;"></div>
-    <button id="checkbtn">Check</button>
-    <div id="result"></div>
+    <div class="design">
+        <h2>Remove Duplicate Elements from Array</h2>
+        <input type="text" placeholder="Input Array" id="input" class="inputdesign">
+        <div id="error" style="color: red;"></div>
+        <button id="checkbtn" class="inputdesign touch">Check</button>
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

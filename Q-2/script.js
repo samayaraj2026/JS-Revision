@@ -15,9 +15,9 @@ function Check() {
     const inputBoxVal = inputBox.value;
 
 
-    error.innerText = " ";
-    error.innerText = " ";
-
+    error.innerText = "";
+    error.innerText = "";
+    result.style.color = 'black'
     if (!inputBoxVal) {
         error.innerText = "Please Enter Text"
         return
@@ -32,6 +32,8 @@ function Check() {
         }
     } else if (inputBoxVal.length > 1) {
         // Proper length check
+        result.style.color = 'red'
         result.innerText = 'Enter single character';
+
     }
 }

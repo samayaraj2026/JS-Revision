@@ -38,6 +38,10 @@ function check() {
         return
 
     }
+    if (!str.includes(',')) {
+        error.innerText = "Full sentence not allowed"
+        return
+    }
     const strVal = str.split(',');
     // console.log(strVal);
     let uniqueArr = [...new Set(strVal)]

@@ -20,19 +20,20 @@ const result = document.getElementById('result');
 function check() {
     const str = input.value.trim();
     // console.log(str);
+    error.textContent = ''
     const regex = /^[a-zA-Z0-9\s]*$/;
     if (str === '') {
-        error.textContent = "Please enter a word "
-        return
+        error.textContent = "Please enter a word ";
+        return;
     }
-    else if (!isNaN(str)) {
-        error.textContent = "Numbers not allowed"
-        return
+    if (!isNaN(str)) {
+        error.textContent = "Numbers not allowed";
+        return;
     }
 
-    else if (!regex.test(str)) {
-        error.textContent = "Special characters not allowed"
-        return
+    if (!regex.test(str)) {
+        error.textContent = "Special characters not allowed";
+        return;
     }
 
 

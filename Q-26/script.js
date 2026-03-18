@@ -23,13 +23,23 @@ function searching(e) {
         "Watch", "X-ray", "Yacht", "Zebra"
     ]
 
+    function display(list) {
+        result.innerHTML = list.join('<br>')
+    }
+
+    if (searchItemsVal === "") {
+        display(arrList);
+        return;
+    }
+
     let output = arrList.filter(items => {
         if (items.toLowerCase().includes(searchItemsVal)) {
             return items
         }
     })
-
-    result.innerText = output;
+    if (output) {
+        result.innerHTML = output.join('<br>');
+    }
 
 }
 

@@ -5,23 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-27</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to left top, #807a9f, #9290b6, #a4a6ce, #b6bde6, #c8d4ff);
+            min-width: 450px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" placeholder="enter name" id="name">
-    <input type="text" placeholder="enter age" id="age">
-    <button onclick="add()">Add</button>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody id="tbody">
+    <div class="design">
+        <input type="text" placeholder="enter name" id="name" class="inputdesign">
+        <input type="text" placeholder="enter age" id="age" class="inputdesign">
+        <button onclick="add()" class="inputdesign touch">Add</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 

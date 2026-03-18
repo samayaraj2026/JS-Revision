@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-22</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to right top, #7a9f98, #81aebb, #a0b9d9, #d1c0e6, #ffc8e0);
+            min-width: 450px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .touch {
+            cursor: pointer;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Password Strength Checker </h2>
-    <input type="password" id="password" placeholder="Enter Password">
-    <div id="error"></div>
-    <div id="strength"></div>
+    <div class="design">
+        <h2>Password Strength Checker </h2>
+        <input type="password" id="password" placeholder="Enter Password" class="inputdesign">
+        <div id="error"></div>
+        <div id="strength"></div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

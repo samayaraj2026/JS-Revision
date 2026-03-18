@@ -29,6 +29,8 @@ function check() {
 
     if (val === '') {
         error.textContent = "Please enter number"
+        return
+        
     }
 
 

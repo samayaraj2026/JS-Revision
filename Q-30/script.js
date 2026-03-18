@@ -24,7 +24,7 @@ startBtn.addEventListener('click', () => {
         if (timeleft <= 0) {
             clearInterval(timer)
 
-            result.textContent = "Timer finished..."
+            result.textContent = "Enter second more than zero"
         }
         else {
             result.textContent = `${timeleft} seconds remaining...`

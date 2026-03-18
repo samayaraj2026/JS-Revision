@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-20</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to right top, #9a9f7a, #aab692, #bbceab, #cce6c6, #deffe1);
+            min-width: 450px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .touch {
+            cursor: pointer;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    <input type="text" placeholder="enter min value" id="min">
-    <input type="text" placeholder="enter max value" id="max">
-    <div id="error"></div>
-    <button id="click">Click</button>
-    <div id="result"></div>
+    <div class="design">
+        <input type="text" placeholder="enter min value" id="min" class="inputdesign">
+        <input type="text" placeholder="enter max value" id="max" class="inputdesign">
+        <div id="error" style="color: red;"></div>
+        <button id="click" class="inputdesign touch">Click</button>
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
