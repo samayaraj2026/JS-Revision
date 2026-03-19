@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-57</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to right top, #7f656c, #94717a, #aa7d88, #c18a97, #d896a5);
+            min-width: 400px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .touch{
+            cursor: pointer;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="design">
+        <input type="text" id="myInputField" placeholder="Type here..." class="inputdesign">
+        <button id="undoBtn" class="inputdesign touch" disabled>[Undo]</button>
+        <button id="redoBtn" class="inputdesign touch" disabled>[Redo]</button>
+        <p>Current value: <span id="currentValueDisplay"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-54</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: linear-gradient(to right top, #5b3f71, #006db9, #009fda, #00cab7, #12eb5d);
+            min-width: 400px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+
+        .inputdesign {
+            padding: 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="design">
+        <h2>Local Storage Form Auto Save </h2>
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter Name" id="name" class="inputdesign">
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter email" id="email" class="inputdesign">
+        <label for="">Message</label>
+        <textarea name="" id="message" class="inputdesign"></textarea>
+        <h3 id="result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
