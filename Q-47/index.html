@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-47</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            overflow-y: hidden;
+        }
+
+        .design {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: wheat;
+            min-width: 400px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="design">
+        <h2>OTP Input UI </h2>
+        <div id="otp" style="padding: 10px;">
+            <input maxlength="1" oninput="otpGen(this,0)">
+            <input maxlength="1" oninput="otpGen(this,1)">
+            <input maxlength="1" oninput="otpGen(this,2)">
+            <input maxlength="1" oninput="otpGen(this,3)">
+            <input maxlength="1" oninput="otpGen(this,4)">
+            <input maxlength="1" oninput="otpGen(this,5)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
