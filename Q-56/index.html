@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-13</title>
+    <title>Q-56</title>
     <style>
         body {
             display: flex;
@@ -17,7 +17,7 @@
 
         .design {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-image: linear-gradient(to right top, #d4b7b8, #e2a2b2, #e88dba, #e07cce, #c672eb);
+            background: white;
             min-width: 400px;
             min-height: 400px;
             display: flex;
@@ -36,7 +36,6 @@
 
         .touch {
             cursor: pointer;
-            width: 150px;
 
         }
     </style>
@@ -44,13 +43,14 @@
 
 <body>
     <div class="design">
-        <form onsubmit="handleSubmit(event)">
-            <input type="submit" value="Submit" class="inputdesign touch">
-        </form>
+        <h2>Search with Highlighted Matches</h2>
+        <input type="search" placeholder="Search..." id="searching" class="inputdesign">
+        <div id="error" style="color: red ;"></div>
+        <div id="result">
+
+        </div>
     </div>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>

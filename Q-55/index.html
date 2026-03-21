@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-13</title>
+    <title>Q-55</title>
     <style>
         body {
             display: flex;
@@ -17,7 +17,7 @@
 
         .design {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-image: linear-gradient(to right top, #d4b7b8, #e2a2b2, #e88dba, #e07cce, #c672eb);
+            background-image: linear-gradient(to top, #93c0e3, #8cbfe3, #84bee3, #7bbde3, #72bce3);
             min-width: 400px;
             min-height: 400px;
             display: flex;
@@ -44,13 +44,13 @@
 
 <body>
     <div class="design">
-        <form onsubmit="handleSubmit(event)">
-            <input type="submit" value="Submit" class="inputdesign touch">
-        </form>
+        <h2>API Request Loader with Retry </h2>
+        <button onclick="fetchData()" class="inputdesign touch">FetchData</button>
+        <div id="result">
+
+        </div>
     </div>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>

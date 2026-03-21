@@ -13,7 +13,7 @@ let count = 0;
 let list = document.getElementById("list35");
 
 function loadItems() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
         count++;
         let li = document.createElement("li");
         li.innerText = "Item " + count;

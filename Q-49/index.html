@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-13</title>
+    <title>Q-49</title>
     <style>
         body {
             display: flex;
@@ -17,7 +17,8 @@
 
         .design {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-image: linear-gradient(to right top, #d4b7b8, #e2a2b2, #e88dba, #e07cce, #c672eb);
+            background: #ff9191;
+            background-image: linear-gradient(to right bottom, #372105, #5d4800, #727900, #6eb000, #12eb4a);
             min-width: 400px;
             min-height: 400px;
             display: flex;
@@ -36,7 +37,7 @@
 
         .touch {
             cursor: pointer;
-            width: 150px;
+            width: 100px;
 
         }
     </style>
@@ -44,13 +45,16 @@
 
 <body>
     <div class="design">
-        <form onsubmit="handleSubmit(event)">
-            <input type="submit" value="Submit" class="inputdesign touch">
-        </form>
+        <h2 style="color: white;">Pagination (Basic) </h2>
+        <ul id="list">
+
+        </ul>
+        <div style="display: flex; justify-content: space-around;">
+            <button onclick="prev()" class="inputdesign touch">Previous</button>
+            <button onclick="next()" class="inputdesign touch">Next</button>
+        </div>
     </div>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>

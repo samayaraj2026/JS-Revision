@@ -32,4 +32,6 @@ const observer = new IntersectionObserver(entries=>{
   })
 })
 
-observer.observe(loader)
+setTimeout(()=>{
+  observer.observe(loader)
+},2000)
