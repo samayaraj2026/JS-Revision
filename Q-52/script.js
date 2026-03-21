@@ -1,7 +1,7 @@
 // 52. Lazy Load Images (Performance Optimization) 
 // HTML Design 
 // Image Gallery 
- 
+
 // [ image ] 
 // [ image ] 
 // [ image ] 
@@ -17,21 +17,23 @@ const loader = document.getElementById('loader')
 
 
 function loadposts() {
-    for (let i = 0; i < 6; i++) {
-        let img = document.createElement("img");
-        img.src = `https://picsum.photos/200/200?random=${page * 10 + i}`;
-        document.getElementById("gallery").appendChild(img);
-    }
+  for (let i = 0; i < 6; i++) {
+    let img = document.createElement("img");
+    img.src = `https://picsum.photos/200/200?random=${page * 10 + i}`;
+    document.getElementById("gallery").appendChild(img);
+  }
   ++page
 }
 loadposts();
-
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(()=>{
-    loadposts()
+let observer;
+setTimeout(() => {
+   observer = new IntersectionObserver(entries => {
+    entries.forEach(() => {
+      loadposts()
+    })
   })
-})
-
-setTimeout(()=>{
-  observer.observe(loader)
 },2000)
+
+setTimeout(() => {
+  observer.observe(loader)
+}, 2000)
