@@ -11,7 +11,7 @@
 const modalPopup = document.getElementById('modalpopup')
 
 function openmodal() {
-    modalPopup.style.display = "block";
+    modalPopup.style.display = "flex";
     modalPopup.style.transition = "transform 1s ease-in-out";
     modalPopup.style.transform = "scale(2);"
 

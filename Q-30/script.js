@@ -18,13 +18,20 @@ const seconds = document.getElementById('second');
 const result = document.getElementById('result');
 const startBtn = document.getElementById('startBtn');
 
+let timer = null;
+
 startBtn.addEventListener('click', () => {
+    clearInterval(timer)
     let timeleft = seconds.value;
-    let timer = setInterval(() => {
+    if (isNaN(timeleft) || timeleft <= 0) {
+        result.textContent = "Enter a valid number of seconds";
+        return; 
+    }
+    timer = setInterval(() => {
         if (timeleft <= 0) {
             clearInterval(timer)
 
-            result.textContent = "Enter second more than zero"
+            result.textContent = "Countdown done"
         }
         else {
             result.textContent = `${timeleft} seconds remaining...`

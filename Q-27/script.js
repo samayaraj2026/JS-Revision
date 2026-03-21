@@ -31,6 +31,12 @@ const name = document.getElementById('name')
 const age = document.getElementById('age')
 const tablebody = document.getElementById('tbody')
 
+function clearInput() {
+    name.value = ''
+    age.value = ''
+
+}
+
 function add() {
     const nameVal = name.value;
     const ageVal = age.value;
@@ -39,6 +45,7 @@ function add() {
         tablebody.innerHTML = ''
         return
     }
+
     const rows = tablebody.rows;
     for (let i = 0; i < rows.length; i++) {
 
@@ -53,4 +60,7 @@ function add() {
 
     `
     tablebody.innerHTML += rowHtml
+
+    clearInput()
+
 }

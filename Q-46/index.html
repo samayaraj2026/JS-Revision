@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-46</title>
     <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            border: 2px solid;
+        }
+
         #modalpopup {
-            position: fixed;
-            top: 40%;
-            left: 40%;
+            position: absolute;
             display: none;
+            top:0;
+            left: 0;
             width: 100%;
             height: 100%;
+            /* z-index: 1; */
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+
 
         }
 
@@ -44,6 +59,7 @@
         }
 
         .heading {
+            /* z-index: -1; */
             text-align: center;
         }
     </style>
@@ -52,7 +68,7 @@
 <body>
     <div class="heading">
         <h2>Login Modal Popup</h2>
-
+<input type="file">
         <button onclick="openmodal()" class="inputdesign touch">Login</button>
 
     </div>
@@ -66,6 +82,8 @@
                 <button onclick="login()" class="inputdesign touch">Login</button>
                 <button onclick="closemodal()" class="inputdesign touch">Close</button>
             </div>
+
+            
 
         </div>
 
